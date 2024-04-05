@@ -38,6 +38,11 @@ function calculaTempo(tempoObjetivo) {
         return [0,0,0,0];
     }
 }
+function atualizarCronometro(){
+    for (let i=0; l<contadores.lenght;i++){
+        document.getElementById("dias"+1).textContent =calculaTempo()
+    }
+}
 
 
     
