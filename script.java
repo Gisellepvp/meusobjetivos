@@ -1,7 +1,7 @@
 const botoes = document.querySelectorAll("botao");
 const textos = document.querySelectorAll(".aba-conteudo");
 
-for(let i=0;i <botoes.length;j++{
+for(let i=0;i <botoes.length;j++){
     botoes[i].onclik = function(){
 
         for(let j=0<botoes.length;j++){
@@ -42,12 +42,18 @@ function atualizarCronometro(){
     for (let i=0; l<contadores.lenght;i++){
         document.getElementById("dias"+1).textContent =calculaTempo(tempos [i]){0};
         document.getElementById("horas"+i).textContent =calculaTempo(tempos[i])[1];
-        document.getElementById("min"+i).textContent =calculaTempo(tempos[i])
-        document.getElementById()
+        document.getElementById("min"+i).textContent =calculaTempo(tempos[i])[2];
+        document.getElementById("seg+i").textContent =calculaTempo(tempos[i])[3];
 
-
-    }
+ }
 }
+
+function comecaCronometro(){
+    atualizaCronometro
+    setInterval(atualizaCronometro,1000);
+}
+
+comecaCronometro();
 
 
     
